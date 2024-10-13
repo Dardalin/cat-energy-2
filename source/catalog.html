@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+
+  <header class="main-header">
+    <a class="main-header__logo-images" href="#">
+      <img src="#" width="40" height="40" alt="Логотип страницы с графическим изображением кота">
+    </a>
+
+    <div class="main-header__logo-inscription">
+      <img src="#" width="40" height="40" alt="Текстовый логотип страницы с надписью Cat energy">
+    </div>
+
+    <nav class="nav">
+      <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span>
+      </button>
+
+      <div class="nav__wrapper">
+
+        <ul class="nav__list-site">
+          <li class="nav__item-sitet">
+            <a href="index.html">главная</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#">каталог продукции</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#">подбор программы</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- каталог -->
+  <section class="main-inner">
+    <div class="main-inner__wrapper"></div>
+    <h1 class="main-inner__inner">каталог</h1>
+
+    <div class="product-card">
+      <a class="product-card__img" href="#">
+        <img src="#" width="140" height="107" alt="фото упаковки товара со вкусом курицы"></a>
+      <a class="product-card__specification-link" href="#">Cat Energy PRO 500 г</a>
+
+      <dl class="product-card__specification">
+
+        <dt class="product-card__specification-name">Масса</dt>
+        <dd class="product-card__specification-meaning">500 г</dd>
+
+        <dt class="product-card__specification-name">Вкус</dt>
+        <dd class="product-card__specification-meaning">Курица</dd>
+
+        <dt class="product-card__specification-name">Цена</dt>
+        <dd class="product-card__specification-meaning">700 р</dd>
+      </dl>
+      <a class="product-card__specification-button" href="#">
+        Заказать
+      </a>
+    </div>
+
+  </section>
+  <!-- Показать еще -->
+  <section class="show-more">
+    <h3 class="show-more__title">Показать еще 100500 товаров</h3>
+    <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
+    <a class="show-more__link" href="#">
+      Показать
+    </a>
+  </section>
+  <!-- Дополнительные товары -->
+
+  <section class="additional-products">
+    <h2 class="additional-products__main-title-inner">Дополнительные товары</h2>
+    <div class="additional-products__wrapper">
+
+      <div class="additional-products__product-card">
+        <a class="additional-products__specification-link" href="#">Сахоразаменитель</a>
+        <dl class="additional-products__specification">
+
+          <dt class="additional-products__specification-name">1 упаковка (100 г)</dt>
+          <dd class="additional-products__specification-meaning">200 р</dd>
+        </dl>
+
+        <a class="additional-products__specification-button" href="#">
+          Заказать
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Акция:подарок -->
+
+  <div class="promotion">
+    <div class="promotion__wrapper">
+      <p class="text-promotion">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+    </div>
+  </div>
+
+  <!-- Подписаться -->
+  <section class="subscribe-form">
+    <div class="subscribe-form__wrapper">
+      <h2 class="subscribe-form__title-form">
+        Акции и новинки
+      </h2>
+      <p class="subscribe-form__form-text">
+        Подпишитесь на наши новости и не пропустите ни одного предложения!
+      </p>
+      <form class="subscribe-form__windows" action="#" method="get">
+        <label>
+          <input class="windows-input" name="e-mail" placeholder="кuklachev@gmail.com">
+        </label>
+        <button class="windows-perform" type="submit">Подписаться</button>
+      </form>
+    </div>
+  </section>
+  <!-- Сотрудничество -->
+  <div class="address">
+    <p class="address-title">Приглашаем к сотрудничеству дилеров!</p>
+    <address class="address-physical">ул. Большая
+      Конюшенная, д. 19/8
+      Санкт-Петербург</address>
+  </div>
+  <!-- карта -->
+  <section class="map">
+    <h3 class="visually-hidden">Географическое расположение карты</h3>
+  </section>
+
+  <!-- подвал -->
+  <footer>
+    <section class="container">
+      <h3 class="visually-hidden">Подвал сайта</h3>
+      <div class="container__logo">
+        <img src="#" width="40" height="40" alt="Текстовый логотип страницы - надпись Cat energy">
+      </div>
+    </section>
+
+    <div class="icon">
+
+      <ul class="icon__list">
+
+        <li class="icon__item">
+          <span class="visually-hidden">вконтакте</span>
+          <a class="icon__link icon__link--vk" href="https://vk.com/htmlacademy">vk</a>
+        </li>
+
+        <li class="icon__item">
+          <span class="visually-hidden">ютуб</span>
+          <a class="icon__link icon__link--yt" href="https://www.youtube.com/@HTMLAcademyTV">yt</a>
+        </li>
+
+        <li class="icon__item">
+          <span class="visually-hidden">телеграм</span>
+          <a class="icon__link icon__link--tg" href="https://t.me/htmlacademy">tg</a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="thumb">
+
+      <ul class="thumb__list">
+        <li class="thumb__item"></li>
+        <li class="thumb__item"></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
