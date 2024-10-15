@@ -11,32 +11,33 @@
 
 <body class="page__body">
 
-  <header class="main-header">
-    <a class="main-header__logo-images" href="#">
-      <img src="#" width="40" height="40" alt="Логотип страницы с графическим изображением кота">
+  <header class="header">
+    <a class="header__logo logo" href="#">
+      <img class="logo__images" src="#" width="40" height="40" alt="Логотип страницы с графическим изображением кота">
     </a>
 
-    <div class="main-header__logo-inscription">
-      <img src="#" width="40" height="40" alt="Текстовый логотип страницы с надписью Cat energy">
+    <div class="header__logo logo">
+      <img class="logo__inscription" src="#" width="40" height="40" alt="Текстовый логотип страницы с надписью Cat energy">
     </div>
     <!-- Каталог -->
     <nav class="nav">
-      <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span>
+      <button class="nav__toggle burger" type="button">
+        <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
 
       <div class="nav">
-        <div class="nav__wrapper">
+        <div class="nav__wrapper wrapper">
           <ul class="nav__list-site">
             <li class="nav__item-site">
-              <a href="index.html">главная</a>
+              <a class="nav__link nav__link--current" href="index.html">главная</a>
             </li>
 
             <li class="nav__item">
-              <a href="catalog.html">каталог продукции</a>
+              <a href="catalog.html">Каталог продукции</a>
             </li>
 
             <li class="nav__item">
-              <a href="#">подбор программы</a>
+              <a href="#">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -45,34 +46,35 @@
 
   </header>
   <!-- главный экран -->
-  <main class="main-container">
-    <div class="main-container__wrapper">
-      <section class="main-section">
+  <main class="main">
+
+    <div class="main__wrapper wrapper">
+      <section class="main__section">
         <h1 class="main-title">Функциональное
           питание для котов</h1>
         <p class="main-slogan">Занялся собой? Займись котом!</p>
         <img src="#" width="40" height="40" alt="Изображение внешнего вида упаковки для корма">
       </section>
       <div class="button">
-        <button class="button__choice" type="button">Подобрать программу
-        </button>
+        <a class="button__choice button-choice" href="#">Каталог Slim
+        </a>
       </div>
     </div>
     <!-- выбор программы -->
     <section class="advantages">
-      <div class="advantages__wrapper">
+      <div class="advantages__wrapper wrapper">
         <h3 class="advantages__title-program">Похудение</h3>
         <img src="#" width="40" height="40" alt="Иконка с силуэтным изображением кошки">
         <p class="advantages__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <div class="button">
-          <button class="button__button-catalog" type="button">Подобрать программу
-          </button>
+          <a class="button__choice button-choice" href="#">Каталог Pro
+          </a>
         </div>
       </div>
     </section>
 
     <section class="advantages">
-      <div class="advantages__wrapper">
+      <div class="advantages__wrapper wrapper">
         <h3 class="advantages__title-program">Набор массы</h3>
         <img src="#" width="40" height="40" alt="Иконка с силуэтным изображением кошки">
         <p class="advantages__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
@@ -85,7 +87,7 @@
     </section>
     <!-- пояснение к функционалу питания -->
     <section class="enum">
-      <div class="enum__wrapper">
+      <div class="enum__wrapper wrapper">
         <h2 class="enum-title">Как это работает</h2>
         <ul class="enum__list">
           <li class="enum__item enum__item--foliage">
@@ -113,19 +115,19 @@
     </section>
     <!-- пример на питомце -->
     <section class="example">
-      <div class="example__wrapper">
+      <div class="example__wrapper wrapper">
         <h2 class="example__title">Живой пример</h2>
-        <p class="example__section">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <p class="example__section">Борис сбросил 5&nbsp;кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <div class="example-values">
           <dl class="example-values__list-description">
-            <dt class="example-values__meaning">5 кг</dt>
-            <dd class="example-values__annotation">Снижение веса</dd>
+            <dt class="example-values__annotation">Снижение веса</dt>
+            <dd class="example-values__meaning">5&nbsp;кг</dd>
           </dl>
           <dl class="example-values__list-description">
-            <dt class="example-values__meaning">60 дней</dt>
-            <dd class="example-values__annotation">затрачено времени</dd>
+            <dt class="example-values__annotation">Затрачено времени</dt>
+            <dd class="example-values__meaning">60 дней</dd>
           </dl>
-          <span>Затраты на питание: 15 000 РУБ.</span>
+          <p>Затраты на питание: 15 000 РУБ.</p>
         </div>
 
         <section class="slider">
@@ -142,24 +144,26 @@
       </div>
     </section>
     <!-- сотрудничество -->
-    <div class="address">
+    <address class="address">
       <p class="address-title">Приглашаем к сотрудничеству дилеров!</p>
-      <address class="address-physical">ул. Большая
+      <p class="address-physical">ул. Большая
         Конюшенная, д. 19/8
-        Санкт-Петербург</address>
-    </div>
+        Санкт-Петербург</p>
+    </address>
     <!-- карта -->
     <section class="map">
-      <h3 class="visually-hidden">Географическое расположение карты</h3>
-
+      <h3 class="visually-hidden">фото карты</h3>
     </section>
   </main>
   <!-- подвал -->
   <footer>
     <section class="container">
       <h3 class="visually-hidden">Подвал сайта</h3>
-      <div class="container__logo">
+      <div class="container__logo logo">
         <img src="#" width="40" height="40" alt="Текстовый логотип страницы - надпись Cat energy">
+      </div>
+      <div class="container__logo logo-images">
+        <img src="#" width="40" height="40" alt="Рисованый логотип страницы - надпись Cat energy">
       </div>
     </section>
 
@@ -168,16 +172,19 @@
       <ul class="icon__list">
 
         <li class="icon__item">
+
           <span class="visually-hidden">Вконтакте</span>
           <a class="icon__link icon__link--vk" href="https://vk.com/htmlacademy">vk</a>
         </li>
 
         <li class="icon__item">
+
           <span class="visually-hidden">Ютуб</span>
           <a class="icon__link icon__link--yt" href="https://www.youtube.com/@HTMLAcademyTV">yt</a>
         </li>
 
         <li class="icon__item">
+
           <span class="visually-hidden">Телеграм</span>
           <a class="icon__link icon__link--tg" href="https://t.me/htmlacademy">tg</a>
         </li>
