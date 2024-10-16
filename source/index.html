@@ -10,40 +10,33 @@
 </head>
 
 <body class="page__body">
+  <div class="wrapper">
+    <header class="header">
+      <nav class="navigation">
+        <a class="navigation__logo" href="index.html">
+          <img class="logo-image" src="#" width="40" height="40" alt="Логотип страницы">
+        </a>
 
-  <header class="main-header">
-    <a class="main-header__logo-images" href="#">
-      <img src="#" width="40" height="40" alt="Логотип страницы с графическим изображением кота">
-    </a>
+        <ul class="navigation__list">
+          <li class="nav__item">
+            <a class="nav__item nav__item--current" href="index.html">Главная</a>
+          </li>
 
-    <div class="main-header__logo-inscription">
-      <img src="#" width="40" height="40" alt="Текстовый логотип страницы с надписью Cat energy">
-    </div>
-    <!-- Каталог -->
-    <nav class="nav">
-      <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span>
-      </button>
+          <li class="navigation__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
 
-      <div class="nav">
-        <div class="nav__wrapper">
-          <ul class="nav__list-site">
-            <li class="nav__item-site">
-              <a href="index.html">главная</a>
-            </li>
+          <li class="navigation__item">
+            <a href="#">Подбор программы</a>
+          </li>
+        </ul>
 
-            <li class="nav__item">
-              <a href="catalog.html">каталог продукции</a>
-            </li>
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+        </button>
+      </nav>
 
-            <li class="nav__item">
-              <a href="#">подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-  </header>
+    </header>
   <!-- главный экран -->
   <main class="main-container">
     <div class="main-container__wrapper">
@@ -53,18 +46,13 @@
         <p class="main-slogan">Занялся собой? Займись котом!</p>
         <img src="#" width="40" height="40" alt="Изображение внешнего вида упаковки для корма">
       </section>
-      <div class="button">
-        <button class="button__choice" type="button">Подобрать программу
-        </button>
-      </div>
-    </div>
-    <!-- выбор программы -->
-    <section class="advantages">
-      <div class="advantages__wrapper">
-        <h3 class="advantages__title-program">Похудение</h3>
-        <img src="#" width="40" height="40" alt="Иконка с силуэтным изображением кошки">
-        <p class="advantages__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <div class="button">
+
+      <section class="programs">
+        <div class="program">
+          <h3 class="program__title">Похудение</h3>
+
+          <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+
           <button class="button__button-catalog" type="button">Подобрать программу
           </button>
         </div>
