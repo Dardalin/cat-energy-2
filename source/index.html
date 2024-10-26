@@ -6,6 +6,9 @@
   <title>CAT</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -14,7 +17,13 @@
     <header class="header">
       <nav class="navigation">
         <a class="navigation__logo" href="index.html">
-          <img class="logo-image" src="#" width="40" height="40" alt="Логотип страницы">
+          <picture class="logo">
+            <source width="70" height="59" type="image/png" media="(min-width: 1440px)" srcset="images/logo_pic_desktop@2x@1x.png 1x, logo_pic_desktop@2x@2x.png 2x">
+
+            <source width="60" height="50" type="image/png" media="(min-width: 768px)" srcset="images/logo_pic_tablet@2x@1x.png 1x, images/logo_pic_tablet@2x@2x.png 2x">
+
+            <img class="logo-image" src="images/logo_mobile@2x@1x.png" srcset="images/logo_mobile@2x@2x.png 2x" width="33" height="38" alt="Логотип страницы">
+          </picture>
         </a>
 
         <ul class="navigation__list">
@@ -41,7 +50,15 @@
       <section class="main__section">
         <h1 class="main__title">Функциональное питание для котов</h1>
         <p class="main__text">Занялся собой? Займись котом!</p>
-        <img src="#" width="40" height="40" alt="Изображение внешнего вида упаковки для корма">
+
+        <picture class="main__main-logo">
+
+          <source width="552" height="449" type="image/png" media="(min-width: 1440px)" srcset="images/index_can_desktop@2x@1x.png 1x, index_can_desktop@2x@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index_can_tablet@2x@1x.png 1x, index_can_tablet@2x@2x.png 2x">
+
+          <img class="main-logo" src="images/index_can_mobile@2x@1x.png" srcset="images/index_can_mobile@2x@2x.png 2x" width="280" height="270" alt="Изображение внешнего вида упаковки для корма">
+        </picture>
+
         <a class="main__button button" href="#">Подобрать программу</a>
       </section>
 
@@ -107,8 +124,21 @@
           <h3 class="visually-hidden">Слайдер c кошкой до и после</h3>
 
           <div class="slider__wrapper">
-            <img class="slider_before" src="#" width="40" height="40" alt="Крепкая кошка">
-            <img class="slider_after" src="#" width="40" height="40" alt="Худая кошка">
+
+            <picture class="slider__image">
+
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/viewport_before_desktop@2x@1x.png 1x, viewport_before_desktop@2x@2x.png 2x">
+
+              <img class="slider__image slider__image--before" src="images/viewport_before_mobile@2x@1x.png" srcset="images/viewport_before_mobile@2x@2x.png 2x" width="280" height="256" alt="Кот ДО">
+            </picture>
+
+            <picture class="slider__image">
+
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/viewport_after_desktop@2x@1x.png 1x, viewport_after_desktop@2x@2x.png 2x">
+
+              <img class="slider__image slider__image--after" src="images/viewport_after_mobile@2x@1x.png" srcset="images/viewport_after_mobile@2x@2x.png 2x" width="280" height="256" alt="Кот ПОСЛЕ">
+            </picture>
+
             <div class="slider_contrast">ползунок???</div>
           </div>
         </section>
@@ -123,7 +153,15 @@
 
       <section class="map">
         <h3 class="visually-hidden">Фото карты</h3>
-        <img src="#" width="768" height="400" alt="Карта с пометкой адреса:ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+
+        <picture class="map__image">
+
+          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/location_desktop@2x@1x.png 1x, location_desktop@2x@2x.png 2x">
+          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/location_tablet@2x@1x.png 1x, location_tablet@2x@2x.png 2x">
+
+          <img class="map__image-location" src="images/location_mobile@2x@1x.png" srcset="images/location_mobile@2x@2x.png 2x" width="320" height="362" alt="Карта с пометкой адреса:ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </picture>
+
       </section>
     </main>
 
