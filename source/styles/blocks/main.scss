@@ -1,0 +1,29 @@
+
+
+.main-conteiner {
+  background-color: $basic_green;
+}
+
+.main__title {
+  font-family: $inner-font;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.main__text {
+  font-family: $inner-font;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.main__button {
+  font-family: $inner-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $basic_green;
+}
