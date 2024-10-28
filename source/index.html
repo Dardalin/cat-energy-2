@@ -28,15 +28,15 @@
 
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__item navigation__item--current" href="index.html">Главная</a>
+            <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
           </li>
 
           <li class="navigation__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
 
           <li class="navigation__item">
-            <a href="#">Подбор программы</a>
+            <a class="navigation__link" href="#">Подбор программы</a>
           </li>
         </ul>
 
@@ -48,9 +48,10 @@
 
     <main class="main">
       <section class="main__section">
-        <h1 class="main__title">Функциональное питание для котов</h1>
-        <p class="main__text">Занялся собой? Займись котом!</p>
-
+        <div class="main-conteiner">
+          <h1 class="main__title">Функциональное питание для котов</h1>
+          <p class="main__text">Занялся собой? Займись котом!</p>
+        </div>
         <picture class="main__main-logo">
 
           <source width="552" height="449" type="image/png" media="(min-width: 1440px)" srcset="images/index_can_desktop@2x@1x.png 1x, index_can_desktop@2x@2x.png 2x">
@@ -106,16 +107,16 @@
       <section class="example">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__section">Борис сбросил 5&nbsp;кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example-values">
-          <dl class="example-values__list-description">
-            <dt class="example-values__meaning">Снижение веса</dt>
-            <dd class="example-values__annotation">5&nbsp;кг</dd>
+        <div class="">
+          <dl class="example__list-description">
+            <dt class="example__meaning">Снижение веса</dt>
+            <dd class="example__annotation">5&nbsp;кг</dd>
 
-            <dt class="example-values__meaning">затрачено времени</dt>
-            <dd class="example-values__annotation">60 дней</dd>
+            <dt class="example__meaning">затрачено времени</dt>
+            <dd class="example__annotation">60 дней</dd>
 
-            <dt class="example-values__meaning">затраты на питание</dt>
-            <dd class="example-values__annotation">15 000&nbsp;руб.</dd>
+            <dt class="example__inner">затраты на питание</dt>
+            <dd class="example__inner">15 000&nbsp;руб.</dd>
           </dl>
         </div>
 
@@ -183,7 +184,7 @@
         </li>
       </ul>
 
-      <a class="developer-link" href="https://htmlacademy.ru/">HTML Academy</a>
+      <a class="footer__developer-link" href="https://htmlacademy.ru/">HTML Academy</a>
     </footer>
   </div>
 </body>

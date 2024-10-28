@@ -1,0 +1,36 @@
+.example__title {
+  font-family: $inner-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.example__section {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}
+
+.example__meaning {
+  font-family: $main-font;
+  font-size: 12px;
+  color: $special_dark-grey;
+  text-transform: lowercase;
+}
+
+.example__annotation {
+  font-family: $inner-font;
+  line-height: 24px;
+  font-size: 24px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.example__inner {
+  font-family: $inner-font;
+  line-height: 14px;
+  font-size: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
